@@ -10,6 +10,7 @@ c = {1, "one","two","three","four"} # Set
 print(c)
 print(type(c))
 
+
 d = ("red","green","blue","yellow") # Tuple
 print(d)
 print(type(d))
@@ -32,3 +33,7 @@ a.append(6)
 a.append(10)
 a.insert(0, 99)
 print(a)
+
+e={'H2': 23, 'H3': 17}
+print(e.keys())
+print(e.values())
