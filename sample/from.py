@@ -1,7 +1,7 @@
-import datetime as dt
+from datetime import datetime
 
 # ดึงข้อมูลวันที่ของวันที่จากไลบรารี่ datetime
-now = dt.datetime.now()
+now = datetime.now()
 print(now)
 # แปลงข้อมูลวันที่ให้อยู่ในรูปแบบข้อความตามรูปแบบที่กำหนดไว้ข้างต้น
 date = now.strftime("%Y %B %d")
