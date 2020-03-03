@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Python</title>
+    </head>
+    <body>
+        <h1>NSTRU Studio</h1>
+        <p>
+            {{ data.title }}
+        </p>
+        <p>
+            {{ data.path }}
+        </p>
+        {% for row in data.detail.student %}
+        <p>{{row.0}} {{row.1}} {{row.2}} [<a href='student/edit/{{row.0}}'>Edit</a>]</p> 
+        {% endfor %}
+    </body>
+</html>

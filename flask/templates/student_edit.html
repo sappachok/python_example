@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Python</title>
+    </head>
+    <body>
+        <h1>NSTRU Studio</h1>
+        <p>
+            {{ data.title }}
+        </p>
+        <p>
+            {{ data.path }}
+        </p>
+        <p>
+            {{ data.detail.sql }}
+        </p>   
+        <p>
+            {{ data.detail.post_data }}
+        </p>             
+        <div>Form Edit</div>
+        <form method="post">
+        <p>
+            <label>Student code</label>
+            <input type="text" name="student_code" value="{{ data.detail.student.0 }}">
+        </p>
+        <p>
+            <label>First name</label>
+            <input type="text" name="first_name" value="{{ data.detail.student.1 }}">
+        </p>
+        <p>
+            <label>Last name</label>
+            <input type="text" name="last_name" value="{{ data.detail.student.2 }}">
+        </p>
+        <p>
+            <button type="submit" name="save">Save</button>
+        </p>        
+        </form>      
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Python</title>
+    </head>
+    <body>
+        <h1>NSTRU Studio</h1>
+        <p>
+            {{ data.title }}
+        </p>
+        <p>
+            {{ data.path }}
+        </p>
+        <p>
+            <b>จังหวัดที่มีเนื้อที่มากที่สุด</b><br>
+            <div>{{ data.detail.province_max }}</div>
+            <div>มีเนื้อที่ทั้งหมด {{ data.detail.area_max }} ตร.กม.</div>
+        </p>        
+        <p>
+            <b>จังหวัดที่มีเนื้อที่น้อยที่สุด</b><br>            
+            <div>{{ data.detail.province_min }}</div>
+            <div>มีเนื้อที่ทั้งหมด {{ data.detail.area_min }} ตร.กม.</div>
+        </p>
+
+    </body>
+</html>
